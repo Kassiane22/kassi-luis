@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Retrospectiva do Amor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="hearts">💖 💕 💖</div>
+    <h1>Retrospectiva de nós DOIS</h1>
+    <p>De 2019 a 2025 – Uma homenagem para o Dia dos Namorados</p>
+    <div class="hearts">💗 💞 💗</div>
+  </header>
+  <div class="nav-btns">
+    <button class="active" onclick="showSection('passeios')">Memórias ALEATÓRIAS</button>
+    <button onclick="showSection('restaurantes')">Memórias de Restaurantes</button>
+  </div>
+
+  <!-- Memórias de Passeios -->
+  <section id="passeios" class="section active">
+    <h2>1% DE NÓS</h2>
+    <div class="timeline">
+      <div class="year-block">
+        <h2>2019~2025</h2>
+        <img src="C:\Users\kassi\Desktop\12.06\fotos\K.png" alt="te amo" onclick="openModal(this)" data-caption="A lot of"/>
+        <div class="photos">
+
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\aa.jpg" alt="NÃO SOU BOA COM LEGENDA..." onclick="openModal(this)" data-caption="NÃO SOU BOA COM LEGENDA..."/>
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\b.jpg" alt="UMA IMAGEM VALE MAIS QUE MIL PALAVRAS" onclick="openModal(this)" data-caption="UMA IMAGEM VALE MAIS QUE MIL PALAVRAS"/>
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\r.png" alt="NÃO SOU BOA COM LEGENDA..." onclick="openModal(this)" data-caption="NÃO SOU BOA COM LEGENDA..."/>
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\s.png" alt="UMA IMAGEM VALE MAIS QUE MIL PALAVRAS" onclick="openModal(this)" data-caption="UMA IMAGEM VALE MAIS QUE MIL PALAVRAS"/>
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\q.png" alt="NÃO SOU BOA COM LEGENDA..." onclick="openModal(this)" data-caption="NÃO SOU BOA COM LEGENDA..."/>
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\p.jpg" alt="UMA IMAGEM VALE MAIS QUE MIL PALAVRAS" onclick="openModal(this)" data-caption="UMA IMAGEM VALE MAIS QUE MIL PALAVRAS"/>
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\l.jpeg" alt="NÃO SOU BOA COM LEGENDA..." onclick="openModal(this)" data-caption="NÃO SOU BOA COM LEGENDA..."/>
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\h.jpg" alt="UMA IMAGEM VALE MAIS QUE MIL PALAVRAS" onclick="openModal(this)" data-caption="UMA IMAGEM VALE MAIS QUE MIL PALAVRAS"/>
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\g.jpg" alt="NÃO SOU BOA COM LEGENDA..." onclick="openModal(this)" data-caption="NÃO SOU BOA COM LEGENDA..."/>
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\f.jpg" alt="UMA IMAGEM VALE MAIS QUE MIL PALAVRAS" onclick="openModal(this)" data-caption="UMA IMAGEM VALE MAIS QUE MIL PALAVRAS"/>
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\c.jpg" alt="NÃO SOU BOA COM LEGENDA..." onclick="openModal(this)" data-caption="NÃO SOU BOA COM LEGENDA..."/>
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\bb.jpg" alt="UMA IMAGEM VALE MAIS QUE MIL PALAVRAS" onclick="openModal(this)" data-caption="UMA IMAGEM VALE MAIS QUE MIL PALAVRAS"/>
+        
+        
+        
+        </div>
+      </div>
+      <!-- Continue adicionando blocos de anos e imagens conforme desejar -->
+    </div>
+  </section>
+
+  <!-- Memórias de Restaurantes -->
+  <section id="restaurantes" class="section">
+    <h2>COMER COM MEU CAPIXINHA</h2>
+    <div class="timeline">
+      <div class="year-block">
+        <h2>2019</h2>
+        <div class="photos">
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\cc.jpg" alt="comer comer" onclick="openModal(this)" data-caption="Dates 0000"/>
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\e.jpg" alt="comer comer com meu capixinha" onclick="openModal(this)" data-caption="Dates 0001"/>
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\i.jpg" alt="comer comer com o cabeça de tucumã" onclick="openModal(this)" data-caption="Dates 0010"/>
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\m.jpg" alt="comer comer com o xubirubo" onclick="openModal(this)" data-caption="Dates 0011"/>
+          <img src="C:\Users\kassi\Desktop\12.06\fotos\n.jpg" alt="comer comer com meu amor" onclick="openModal(this)" data-caption="Dates 0100"/>
+          
+        </div>
+      </div>
+      <!-- Continue adicionando blocos de anos e imagens conforme desejar -->
+    </div>
+  </section>
+
+  <!-- Modal para exibir imagem ampliada -->
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <button class="close-btn" onclick="closeModal(event)">&times;</button>
+    <div class="caption" id="modal-caption"></div>
+    <img id="modal-img" src="" alt="Foto ampliada" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
